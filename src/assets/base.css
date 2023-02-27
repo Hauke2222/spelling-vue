@@ -1,0 +1,146 @@
+html {
+  background-color: #F0EEE4;
+}
+
+body {
+  font-size: 13pt;
+  line-height: 1.4;
+  padding: 0 1em;
+  max-width: 720px;
+  margin: 2em auto;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  padding: 6px 14px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-10 {
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.button-11 {
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-11:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.guess-input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.inline-li {
+  display: inline;
+  padding: 2px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background-color: white;
+  padding: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin: 2.5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  border: 1px solid #4a4a4a;
+}
+
+select,
+input {
+  color: #4a4a4a;
+  padding: 6px 10px;
+  margin: 5px;
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+select:focus,
+input:focus {
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+span {
+  background-color: white;
+  padding: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin: 2.5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.guess-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.yellow {
+  background-color: rgb(255, 255, 134);
+}
+
+.red {
+  background-color: lightcoral;
+}
