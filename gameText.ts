@@ -1,21 +1,18 @@
-<script setup lang="ts">
-import {ref} from 'vue';
+interface GameText {
+    [key: string]: {
+        [locale: string]: string;
+    };
+}
 
-// defineProps<{
-//     msg: string;
-// }>();
-
-const activeLocale = ref('en');
-
-const gameText = {
+const gameText: GameText = {
     en: {
         playWord: 'New word',
         replayWord: 'Replay word',
         submit: 'Submit',
-        audio: 'Audio',
+        audio: 'audio',
         usedLetters: 'Used letters',
         outcome: 'Outcome',
-        hint: 'Display letters',
+        hint: 'display letters',
         correct: 'correct',
         incorrect: 'incorrect',
         localeCode: 'en-GB',
@@ -25,16 +22,18 @@ const gameText = {
         a: ': Correct.',
         b: ': The letter is in the word but it is not at the correct spot.',
         c: ': The letter is not in the word.',
-        warning: 'The sound option does not work on all browsers and operating systems.',
+        warning: 'The audio option does not work on all browsers and operating systems.',
+        settings: 'settings',
+        language: 'language',
     },
     nl: {
         playWord: 'Nieuw woord',
         replayWord: 'Herhaal woord',
         submit: 'Indienen',
-        audio: 'Geluid',
+        audio: 'geluid',
         usedLetters: 'Gebruikte letters',
         outcome: 'Uitkomst',
-        hint: 'Toon letters',
+        hint: 'toon letters',
         correct: 'goed',
         incorrect: 'fout',
         localeCode: 'nl-NL',
@@ -45,9 +44,9 @@ const gameText = {
         b: ': De letter komt voor in het woord maar staat niet op de goede plek.',
         c: ': De letter komt niet voor in het woord.',
         warning: 'De geluid optie werkt niet op alle browsers en besturingssystemen.',
+        settings: 'Opties',
+        language: 'taal',
     },
 };
-function localize(key: string) {
-    return gameText[activeLocale.value][key];
-}
-</script>
+
+export default gameText;

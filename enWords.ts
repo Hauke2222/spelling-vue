@@ -1,3 +1,3 @@
-const nlWords = ['water', 'fire', 'cow', 'angel', 'space', 'stars'];
+const enWords = ['water', 'fire', 'cow', 'angel', 'space', 'stars'];
 
-export default nlWords;
+export default enWords;
